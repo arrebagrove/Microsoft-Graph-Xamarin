@@ -56,7 +56,7 @@ namespace XamarinConnect
                 //string requestUrl = graphClient.Me.Request().RequestUrl;
                 string requestUrl = graphClient.Users.Request().RequestUrl;
                                 
-                requestUrl = requestUrl +"('"+ CurrentUser.UserPrincipalName + "')/people";
+                requestUrl = requestUrl +"('"+ CurrentUser.Id + "')/people";
 
                 Debug.WriteLine(requestUrl);
 
